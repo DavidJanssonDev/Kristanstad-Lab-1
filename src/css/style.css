@@ -4,20 +4,20 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Inter", system-ui, sans-serif;
 }
 
-:root[data-theme="light"] {
-  --text: #080a0c;
+:root {
+  
+  --text-base-dark: #080a0c;
+  --text-base-light: #f3f5f7;
+  
+  --text-hover-light: #185286;  
+  --text-hover-dark: #171d23;  
+  
   --background: #f6f8f9;
   --primary: #09253e;
   --secondary: #99b7d1;
-  --accent: #6a9cc8;
-}
-
-:root[data-theme="dark"] {
-  --text: #f3f5f7;
-  --background: #060809;
-  --primary: #c1ddf6;
-  --secondary: #2e4c66;
-  --accent: #376995;
+  
+  
 }
