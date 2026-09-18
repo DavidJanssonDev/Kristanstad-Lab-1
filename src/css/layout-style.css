@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: var(--header-height);
+    scroll-padding-top: calc(var(--header-height) + 1.5rem);
 }
 
 body {
@@ -18,8 +18,10 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: auto auto auto; 
+    grid-template-rows: auto auto auto auto; 
     row-gap: 2rem;
+    padding: 1.5rem 0;
+    
     grid-template-areas: 
     ". about-me-container about-me-container about-me-container about-me-container ."
     ". intresests-container intresests-container intresests-container intresests-container ."
