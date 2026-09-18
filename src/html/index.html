@@ -1,30 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="David Jansson — software developer portfolio, background, interests, and goals."
+    />
+    <title>David Jansson — Portfolio</title>
+
+    <!-- FONT WEIGTH -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/nav-style.css" />
+    <link rel="stylesheet" href="../css/layout-style.css" />
+    <link rel="stylesheet" href="../css/section-style.css" />
+    <link rel="stylesheet" href="../css/contact-form-style.css">
+  </head>
+
+  <body>
     <header>
-        <nav>
-            <a href="#biography-section">Biography</a>
-            <a href="#interests-section">Biography</a>
-            <a href="#goal-section">Biography</a>
-        </nav>
+      <nav id="nav-bar">
+        <ul id="nav-link">
+          <li><a href="#about-me-container" class="page-link">About Me</a></li>
+          <li>
+            <a href="#intresests-container" class="page-link">Interests</a>
+          </li>
+          <li><a href="#goal-container" class="page-link">Goal</a></li>
+          <li><a href="#contact-forum-container" class="page-link">Contact Me</a></li>
+        </ul>
+
+        <div id="profile-image-boreder">
+          <img
+            src="../img/IMG_2744.JPG"
+            alt="David Jansson"
+            width="150"
+            height="150"
+          />
+        </div>
+      </nav>
     </header>
+
     <main>
-        <section id="biography-section">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum libero molestias nihil quo, necessitatibus illo magnam incidunt ipsam fuga in dolor tenetur ducimus ullam earum ad ipsum maiores debitis explicabo?
-            Impedit quod sunt, excepturi saepe iste aliquam error blanditiis? Ipsa, dicta rerum doloribus cumque quidem aut aspernatur et, quae quisquam quam quo facilis quos dolores incidunt. Quod voluptate laboriosam omnis.
-            Repudiandae inventore reiciendis pariatur nisi. Consequatur laboriosam ut ipsum. Pariatur nostrum, fugit provident maiores quos voluptatibus dolore harum hic, corrupti velit necessitatibus mollitia fuga incidunt, voluptatum quaerat aliquam deserunt explicabo!
-        </section>
-        <section id="interests-section"></section>
-        <section id="goal-section"></section>
+      <section id="about-me-container">
+        <h1 class="section-header">About Me</h1>
+
+        <details class="question-style">
+          <summary>Introduction to programming</summary>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+            doloribus sequi laudantium, aut placeat accusantium laborum
+            incidunt. Dolore, maxime modi.
+          </p>
+        </details>
+
+        <details class="question-style">
+          <summary>Special Event</summary>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+            doloribus sequi laudantium, aut placeat accusantium laborum
+            incidunt. Dolore, maxime modi.
+          </p>
+        </details>
+
+        <details class="question-style">
+          <summary>Infulence with programming</summary>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+            doloribus sequi laudantium, aut placeat accusantium laborum
+            incidunt. Dolore, maxime modi.
+          </p>
+        </details>
+      </section>
+
+      <section id="intresests-container">
+        <h2 class="section-header">Interests</h2>
+
+        <details class="question-style">
+          <summary>What is my intresests?</summary>
+          <p>Add your interests content here.</p>
+        </details>
+
+        <details class="question-style">
+          <summary>Hobbies outside of code</summary>
+          <p>Add a hobby or interest here.</p>
+        </details>
+
+        <details class="question-style">
+          <summary>Games I'm into</summary>
+          <p>Add favorite games or genres here.</p>
+        </details>
+      </section>
+
+      <section id="goal-container">
+        <h2 class="section-header">Goal</h2>
+
+        <details class="question-style">
+          <summary>Where I'm headed</summary>
+          <p>Add your goals content here.</p>
+        </details>
+
+        <details class="question-style">
+          <summary>Short-term goal</summary>
+          <p>Add a short-term goal here.</p>
+        </details>
+
+        <details class="question-style">
+          <summary>Long-term goal</summary>
+          <p>Add a long-term goal here.</p>
+        </details>
+      </section>
+
+      <section id="contact-forum-container">
+        <form action="#" method="POST">
+          <div id="name-input">
+            <label for="name">Full Name</label><br />
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+          <div id="email-input">
+            <label for="email">Email Address</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+          <div id="message-input">
+            <label for="message">Message</label><br />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Type your message..."
+              maxlength="200"
+              required
+            ></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
+
     <footer>
-        
+      <p>&copy; 2026 David Jansson</p>
     </footer>
-</body>
+  </body>
 </html>
