@@ -36,22 +36,21 @@
         color 0.2s ease, 
         background-color 0.2s ease, 
         border-color 0.2s ease;
-}
 
-.page-link:hover {
-    color: var(--primary);
-    background-color: var(--secondary);
-}
+    &:hover {
+        color: var(--primary);
+        background-color: var(--secondary);
+    }
 
-.page-link:active {
-    background-color: var(--accent);
-    border-color: var(--accent);
-    color: var(--text-base-light);
-}
-
-.page-link:focus-visible {
-    outline: 2px solid var(--accent);
-    outline-offset: 4px;
+    &:active {
+        background-color: var(--accent);
+        border-color: var(--accent);
+        color: var(--text-base-light);
+    }
+    &:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 4px;
+    }
 }
 
 header {

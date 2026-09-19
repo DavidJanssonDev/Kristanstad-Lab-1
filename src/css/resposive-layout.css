@@ -1,0 +1,22 @@
+/* All sizes: let grid children shrink instead of stretching the page sideways */
+main > section {
+    min-width: 0;
+}
+ 
+/* Pictures: were fixed at 400x400 and never wrapped, which overflows a phone */
+#personal-picture-container > div {
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#personal-picture-container > div img {
+    width: min(100%, 400px);
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+ 
+
+@media (max-width: 768) {
+    
+}

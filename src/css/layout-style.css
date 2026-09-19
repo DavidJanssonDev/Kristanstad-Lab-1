@@ -18,15 +18,15 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; 
-    grid-template-rows: auto auto auto auto; 
+    grid-template-rows: auto auto auto auto auto; 
     row-gap: 2rem;
     padding: 1.5rem 0;
-    
     grid-template-areas: 
-    ". about-me-container about-me-container about-me-container about-me-container ."
-    ". intresests-container intresests-container intresests-container intresests-container ."
-    ". goal-container goal-container goal-container goal-container ."
-    ". contact-forum contact-forum contact-forum contact-forum .";
+    ". about-me-container   about-me-container      about-me-container   about-me-container   ."
+    ". intresests-container intresests-container    intresests-container intresests-container ."
+    ". personal-picture     personal-picture        personal-picture     personal-picture     ."
+    ". goal-container       goal-container          goal-container       goal-container       ."
+    ". contact-forum        contact-forum           contact-forum        contact-forum        .";
     grid-area: main-container; 
 }
 
@@ -42,3 +42,4 @@ footer { grid-area: footer-container; }
 #intresests-container { grid-area: intresests-container; }
 #goal-container { grid-area: goal-container; }
 #contact-forum-container {grid-area: contact-forum }
+#personal-picture-container { grid-area: personal-picture;}
