@@ -33,3 +33,14 @@ footer {
     }
     
 }
+
+
+#seed-name {
+    color: var(--seed-color);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    &:focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+    }
+}
